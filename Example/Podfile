@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'YCSServices_Example' do
+  pod 'YCSServices', :path => '../'
+
+  target 'YCSServices_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
