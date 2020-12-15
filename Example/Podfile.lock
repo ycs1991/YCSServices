@@ -1,0 +1,27 @@
+PODS:
+  - LCProgressHUD (1.0.8):
+    - MBProgressHUD (~> 0.9.2)
+  - MBProgressHUD (0.9.2)
+  - YCSServices (0.1.0):
+    - LCProgressHUD
+
+DEPENDENCIES:
+  - YCSServices (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - LCProgressHUD
+    - MBProgressHUD
+
+EXTERNAL SOURCES:
+  YCSServices:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LCProgressHUD: c79809d917bf9cc1cd1cdfc4d91a44c8dbfa5692
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  YCSServices: cc503e31a24a76329d90ebd0baaaae435be37063
+
+PODFILE CHECKSUM: 1b1fe7b7ce5a179046bc4351382d74528227c32f
+
+COCOAPODS: 1.9.1

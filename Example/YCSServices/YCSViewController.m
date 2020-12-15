@@ -7,6 +7,7 @@
 //
 
 #import "YCSViewController.h"
+#import <YCSServices/TKZJBaseApplePayModel.h>
 
 @interface YCSViewController ()
 
@@ -18,6 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [[TKZJBaseApplePayModel alloc] tk_legend_nextNavigatePaymentFun:@"123" quantity:1 tk_legend_sendOrder:@"sdffsdfwefse"];
 }
 
 - (void)didReceiveMemoryWarning

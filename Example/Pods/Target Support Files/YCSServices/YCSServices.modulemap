@@ -1,0 +1,6 @@
+framework module YCSServices {
+  umbrella header "YCSServices-umbrella.h"
+
+  export *
+  module * { export * }
+}

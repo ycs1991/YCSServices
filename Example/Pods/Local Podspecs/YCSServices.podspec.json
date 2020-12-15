@@ -1,0 +1,27 @@
+{
+  "name": "YCSServices",
+  "version": "0.1.0",
+  "summary": "A short description of YCSServices.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ycs1991/YCSServices",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ycs1991": "757771107@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/ycs1991/YCSServices.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "YCSServices/Classes/**/*",
+  "dependencies": {
+    "LCProgressHUD": [
+
+    ]
+  }
+}

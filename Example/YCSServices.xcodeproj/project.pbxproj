@@ -38,11 +38,11 @@
 
 /* Begin PBXFileReference section */
 		058003C7D6B6393540EB9300 /* Pods-YCSServices_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCSServices_Example.release.xcconfig"; path = "Target Support Files/Pods-YCSServices_Example/Pods-YCSServices_Example.release.xcconfig"; sourceTree = "<group>"; };
-		14C7B0377A3F2500E19D981C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		14C7B0377A3F2500E19D981C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		26D8BDC7031C2B6F25FF36F6 /* Pods-YCSServices_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCSServices_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YCSServices_Tests/Pods-YCSServices_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		55917B32C4E01ECADA64F0AA /* Pods-YCSServices_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCSServices_Tests.release.xcconfig"; path = "Target Support Files/Pods-YCSServices_Tests/Pods-YCSServices_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5B54D785BF12B6A82D1CCF71 /* Pods_YCSServices_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YCSServices_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B6C63423DA7960D566FFC28 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5B6C63423DA7960D566FFC28 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YCSServices_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCSServices_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,7 +66,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D11C58BE7E7553527D78D406 /* Pods-YCSServices_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCSServices_Example.debug.xcconfig"; path = "Target Support Files/Pods-YCSServices_Example/Pods-YCSServices_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E05B8ECCA70BF4B7D9E7ED5E /* YCSServices.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YCSServices.podspec; path = ../YCSServices.podspec; sourceTree = "<group>"; };
+		E05B8ECCA70BF4B7D9E7ED5E /* YCSServices.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YCSServices.podspec; path = ../YCSServices.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				26D8BDC7031C2B6F25FF36F6 /* Pods-YCSServices_Tests.debug.xcconfig */,
 				55917B32C4E01ECADA64F0AA /* Pods-YCSServices_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,10 +302,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YCSServices_Example/Pods-YCSServices_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LCProgressHUD/LCProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/YCSServices/YCSServices.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LCProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YCSServices.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
