@@ -22,7 +22,7 @@ pod 'YCSServices'
 
 ## Author
 
-ycs1991, 757771107@qq.com
+ycs1991, 757771107@qq.com，guangzhou
 
 ## License
 
